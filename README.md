@@ -2,7 +2,7 @@
 
 As recommended, this project does not use front-end frameworks, it was developed using only HTML, CSS and JAVASCRIPT. I tried to make the layout as close as possible to the mockup.
 
-[Live demo]()
+[Live demo](https://linx-front-challenge.netlify.app/)
 
 ## Challenge
 
