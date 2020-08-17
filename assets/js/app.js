@@ -5,7 +5,7 @@ let actualPage = 1;
 const button = document.getElementById("more");
 const productsList = document.getElementById("products-grid");
 
-const convertNumberToMoney = (val) =>
+const convertToMoney = (val) =>
   val.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
 async function createProducts() {
@@ -20,39 +20,34 @@ async function createProducts() {
   results.products.map((product) => {
     item = `
       <li>
-      <figure>
       <img src=${
         product.image
           ? `http://${product.image}`
           : "https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"
       } alt="Product" >
-      </figure>
         
-        <h3>${product.name ? product.name : "Produto sem nome"}</h3>
+        <span>${product.name ? product.name : "Produto sem nome"}</span>
         <p>${
           product.description
             ? product.description
             : "Este produto não tem descrição"
         }</p>
-        <span>R$ ${
-          product.oldPrice ? convertNumberToMoney(product.oldPrice) : ""
-        }</span>
-        <strong>R$ ${
-          product.price
-            ? convertNumberToMoney(product.price)
-            : "Valor indisponível"
+        <p>De R$ ${product.oldPrice ? convertToMoney(product.oldPrice) : ""}</p>
+        <strong>Por R$ ${
+          product.price ? convertToMoney(product.price) : "Valor indisponível"
         }</strong>
         ${
           product.installments
-            ? `<h4>ou ${
+            ? `<p>ou ${
                 product.installments.count ? product.installments.count : ""
               }x de R$ ${
                 product.installments.value
-                  ? convertNumberToMoney(product.installments.value)
+                  ? convertToMoney(product.installments.value)
                   : ""
-              } </h4>`
+              } </p>`
             : ""
         }
+        <button class="add-cart" onclick="alert('Produto adicionado ao seu carinho!')">Comprar</button>
       </li>
       `;
     productsList.innerHTML += item;

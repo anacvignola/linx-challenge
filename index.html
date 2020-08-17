@@ -74,41 +74,47 @@
   </section>
 
   <section id="products" class="products">
-    <h4>Sua seleção especial</h4>
+    <h2>
+      <span>Sua seleção especial</span>
+    </h2>
 
     <ul id="products-grid" class="products-grid">
 
     </ul>
 
-    <button id="more" class="btn-more">Ainda mais produtos aqui!</button>
+    <div class="align">
+      <button id="more" class="btn-more">Ainda mais produtos aqui!</button>
+    </div>
 
   </section>
 
   <section id="share" class="share">
-    <h4>Compartilhe a novidade</h4>
+    <h2><span>Compartilhe a novidade</span></h2>
+    <div class="align">
+      <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
 
-    <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+      <form class="share-form">
+        <div class="input-content">
+          <label>Nome do seu amigo:</label>
+          <input type="text" required />
+        </div>
 
-    <form>
-      <div class="input-content">
-        <label>Nome do seu amigo:</label>
-        <input type="text" required />
-      </div>
+        <div class="input-content">
+          <label>E-mail:</label>
+          <input type="email" required />
+        </div>
+      </form>
 
-      <div class="input-content">
-        <label>E-mail:</label>
-        <input type="email" required />
-      </div>
-    </form>
+      <button class="btn-more btn-share" onclick="alert('E-mail enviado com sucesso!')">Enviar agora</button>
+    </div>
 
-    <button>Enviar agora</button>
   </section>
 
   <footer>
     <p>Testando suas habilidades em HTML, CSS e JS.
-      <br /><br />
+      <br />
       Impulse
-      <br /><br />
+      <br />
       2019
     </p>
   </footer>
