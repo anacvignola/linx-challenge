@@ -1,19 +1,29 @@
 # Linx Challenge
 
-## Sobre o desafio
+As recommended, this project does not use front-end frameworks, it was developed using only HTML, CSS and JAVASCRIPT. I tried to make the layout as close as possible to the mockup.
 
-O desafio consiste no desenvolvimento do _layout_ de uma _landing page_ com uma grade de produtos e um formulário de _newsletter_. Seu principal objetivo é transformar este _layout_ em uma página funcional.
+[Live demo]()
 
-**Link do layout**: https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614/specs/
+## Challenge
 
-**Endpoint da API**: https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1
+The challenge is to develop the _layout_ of a _landing page_ with a product grid and a _newsletter_ form. Its main objective is to transform this _layout_ into a functional page.
 
-### Comportamento:
+**Layout Link**: https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614/specs/
 
-- Para cada **produto** retornado pela API, um **card de produto** com as respectivas informações deve ser criado na grade de produtos;
-- Ao clicar no botão **Ainda mais produtos aqui!** a próxima página da API deve ser consultada, gerando mais **8 produtos** na grade existente, abaixo dos produtos já carregados pela primeira requisição;
-- O formulário de _newsletter_ com o título **Compartilhe a novidade** deve ter seus campos de _input_ validados de acordo com o conteúdo (ex: O campo de email deve conter um email válido);
+**API Endpoint**: https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1
 
-## Conclusão
+### Actions:
 
-Conforme recomendado este projeto não utiliza frameworks front-end, foi desenvolvido utilizando apenas HTML, CSS e JAVASCRIPT. Tentei fazer o layout o mais próximo possível do mockup.
+- For each **product** returned by the API, a ** product card ** with the respective information must be created in the product grid;
+- By clicking on the button **Even more products here!** the next page of the API should be consulted, generating ** 8 more products ** in the existing grid, below the products already loaded by the first request;
+- The _newsletter_ form with the title **Share the news** must have its _input_ fields validated according to the content (eg: the email field must contain a valid email);
+
+## How to use
+
+```bash
+# Clone this repository
+$ git clone https://github.com/anacvignola/linx-challenge
+
+# Go into the repository
+# Open index.html in your browser
+```
