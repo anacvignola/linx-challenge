@@ -14,8 +14,6 @@ O desafio consiste no desenvolvimento do _layout_ de uma _landing page_ com uma 
 - Ao clicar no botão **Ainda mais produtos aqui!** a próxima página da API deve ser consultada, gerando mais **8 produtos** na grade existente, abaixo dos produtos já carregados pela primeira requisição;
 - O formulário de _newsletter_ com o título **Compartilhe a novidade** deve ter seus campos de _input_ validados de acordo com o conteúdo (ex: O campo de email deve conter um email válido);
 
----
-
 ## Conclusão
 
 Conforme recomendado este projeto não utiliza frameworks front-end, foi desenvolvido utilizando apenas HTML, CSS e JAVASCRIPT. Tentei fazer o layout o mais próximo possível do mockup.
